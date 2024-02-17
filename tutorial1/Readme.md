@@ -16,13 +16,13 @@ Python is dynamic type language that mean variables type can change we can pass 
 alos it use garbage colection aproch that mean the allocation of memory is automatic programe search in memory and where it find space that we don't use it create our variables there
 ### Mutability
 mutability mean that we can change value of variables , not all data type are mutable the mutable once are :
-    * list
-    * dictionary
-    * set
+* list
+* dictionary
+* set
 Immutable object are :
-    * Integer
-    * Tuple
-    * String
+* Integer
+* Tuple
+* String
 ### Taking user input and printing
 to print value to the console we use `print()` , we can take user input using `input()` this function always take input as string if we want other types we can change by passing the return value to the function that will convert to our type
 #### Example :
