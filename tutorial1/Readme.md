@@ -23,7 +23,14 @@ Immutable object are :
     * Integer
     * Tuple
     * String
-
+### Taking user input and printing
+to print value to the console we use `print()` , we can take user input using `input()` this function always take input as string if we want other types we can change by passing the return value to the function that will convert to our type
+#### Example :
+```Python
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+print("a + b = {a+b}")
+```
 
 
 
