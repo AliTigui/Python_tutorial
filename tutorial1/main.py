@@ -13,6 +13,7 @@ print(a*b)
 print(a**2)
 print(a//2)
 print(a%3)
+b,a=a,b
 
 # Working with Booleans
 b1=True
@@ -51,13 +52,21 @@ print(mylist)
 mylist.sort()
 mylist.reverse()
 list2=[1,2,3,4,5]
+list2[0]=88
 print(mylist+list2)
 my2Dlist=[[1,2],[4,5],[6,7],[8,9]]
 print(len(my2Dlist))
 print(my2Dlist[0])
 print(my2Dlist[0][1])
-
-
+lc=[i for i in range(10)]# list comprehention
+lc2d=[[j,i] for j in range(4) for i in range(5)]  
+print(lc2d)
+t=(4,5,7)
+print(t[0])
+(a,*b)=lc
+print(a)
+print(b)
+# Set and Dictionary
 s=set()
 s.add(4)
 d={"name":"ali","age":20}
