@@ -29,8 +29,7 @@ to print value to the console we use `print()` , we can take user input using `i
 ```Python
 a=int(input("Enter a:"))
 b=int(input("Enter b:"))
-print("a + b = {a+b}")
+print(f"a + b = {a+b}")
 ```
-
-
-
+### Comment 
+we can create comment in python using `#` this wll create single line comment , in python there is no multiple line comment
