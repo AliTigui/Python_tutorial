@@ -35,7 +35,25 @@ print(full_name)
 print("#"*5)
 print("ali".center(10,"_"))
 
-# Working with array
+# Working with List and Tuple
+mylist=[]
+mylist.append(4)
+mylist.append(10)
+mylist.append(11)
+mylist.append(12)
+print(mylist)
+print(mylist.pop())
+print(mylist)
+print(f"first value of the list {mylist[0]}")
+print(f"is {4} in the list {4 in mylist}")
+mylist.remove(10)
+print(mylist)
+mylist.sort()
+mylist.reverse()
+list2=[1,2,3,4,5]
+print(mylist+list2)
+
+
 s=set()
 s.add(4)
 d={"name":"ali","age":20}
