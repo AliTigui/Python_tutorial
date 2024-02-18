@@ -27,15 +27,16 @@ else:
     print(f"{a} /2 is {a/2}")
 finally:
     print("Programe ended")
+
+
+
 # working with files
 ## Writes to a file 
-
-
-
 name = input("What's your name? ")
 file = open("names.txt", "w")
 file.writelines([f"{name}\n","MAjda\n"])
 file.close()
+
 name = input("What's your name? ")
 file = open("names.txt", "a")
 file.write(f"{name}\n")
