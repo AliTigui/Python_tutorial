@@ -1,4 +1,4 @@
-## Tutorial 2
+## Tutorial 3
 This tutorial will be about functional programming
 
 ### Creating and working with function
