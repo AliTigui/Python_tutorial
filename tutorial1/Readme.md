@@ -33,3 +33,7 @@ print(f"a + b = {a+b}")
 ```
 ### Comment 
 we can create comment in python using `#` this wll create single line comment , in python there is no multiple line comment
+### Constant 
+In python we don't have constant but programer reffer to variables that they want to be constant as variable name with upper case letters  
+#### Example
+```BOT_NAME="wally"```
