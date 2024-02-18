@@ -15,6 +15,22 @@ def Sum(a,b):
 print(Sum(10,20))
 print("_"*20)
 
+# function scope
+var=10
+def change(a):
+    b=9
+    var=a
+change(9)
+print(var) # variable didn't change
+#print(b) this will cuz error it our of scope
+print("*"*20)
+def real_change(a):
+    global var
+    var=a
+real_change(11)
+print(var)# now it changed
+print("_"*20)
+
 # function take arbitrary number of parametre
 def hello_names(*names):
     for name in names:
