@@ -147,3 +147,18 @@ def add(a:int,b:int)->int :
 
 print(add(5,4))
 ```
+### Functional programming concepts
+#### Pure functions
+These functions have two main properties. 
+* they always produce the same output for same arguments irrespective of anything else. 
+* they have no side-effects i.e. they do not modify any arguments or local/global variables or input/output streams. 
+* they have immutability. The pure function’s only result is the value it returns. They are deterministic.
+#### Recursive function
+Iteration in functional languages is implemented through recursion. Recursive functions repeatedly call themselves, until it reaches the base case. 
+#### First-Class functions and can be Higher-Order function
+First-class functions are treated as first-class variable. The first class variables can be passed to functions as parameter, can be returned from functions or stored in data structures.  
+Higher order functions are the functions that take other functions as arguments and they can also return functions. 
+#### Referential transparency 
+In functional programs variables once defined do not change their value throughout the program. Functional programs do not have assignment statements. If we have to store some value, we define new variables instead. This eliminates any chances of side effects because any variable can be replaced with its actual value at any point of execution. State of any variable is constant at any instant.
+#### Variables are Immutable
+In functional programming, we can’t modify a variable after it’s been initialized. We can create new variables – but we can’t modify existing variables, and this really helps to maintain state throughout the runtime of a program. Once we create a variable and set its value, we can have full confidence knowing that the value of that variable will never change.  
