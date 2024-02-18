@@ -27,6 +27,7 @@ for i in range(10):
 l=[4,7,9,10]
 for i in l:
     print(i**2)
+
 users=[{"name":"Ali","age":20},{"name":"Russ","age":22},{"name":"Majda","age":20}]
 for i in users:
     for k,v in i.items():
