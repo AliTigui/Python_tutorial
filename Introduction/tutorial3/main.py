@@ -41,9 +41,18 @@ user_data(**user)
 print("_"*20)
 
 # function take other function as parametre
-
 def do_something(func):
     print("hello from do something")
     func()
     print()
 do_something(say_hello)
+print("_"*20)
+
+# Recursive function 
+def power(n,base=2):
+    if base==0:
+        return 1
+    else :
+        return n*power(n,base-1)
+print(f"5 to power of 2 is {power(5)}")
+print(f"2 to power of 5 is {power(2,4)}")
