@@ -104,4 +104,17 @@ print("*"*20)
 def hi_user():
     print("hi user")
 print(hi_user())
+print("*"*20)
 
+@func_decorator
+def hi_user2():
+    say_hello()
+print(hi_user2())
+hi_user2()
+print("_"*20)
+
+# documenting function
+def add(a:int,b:int)->int :
+    return a+b
+
+print(add(5,4))

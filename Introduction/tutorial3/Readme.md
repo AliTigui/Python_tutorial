@@ -77,4 +77,73 @@ def user_data(**data):
 user_data(name="ali",grade="master",age=22)
 user={"name":"hmm","grade":"bs","age":20}
 user_data(**user)
-``` 
+```
+
+### Recursive function
+Recursive function are type of function that keep calling theirself again and again untill condition  become true this aproche better then using loops cuz it faster but we have to be carefull and determine the base condition of the function cuz we can get stack overflow if we keep calling the function again and again and again 
+#### Example
+```Python
+def power(n,base=2):
+    if base==0:
+        return 1
+    else :
+        return n*power(n,base-1)
+print(f"5 to power of 2 is {power(5)}")
+print(f"2 to power of 5 is {power(2,4)}")
+print("_"*20)
+```
+### function that take other function as parametre and function that return function (decorator)
+python support functional programming concept we can make function that take other function as parametre and function that take return function  
+also python introduce decorator to help us work with that concept and make code more clean 
+#### Example 
+```Python
+# function take other function as parametre
+def do_something(func):
+    print("hello from do something")
+    func()
+    print()
+do_something(say_hello)
+
+# Function that return function
+def func_builder():
+    print("building function")
+    def func():
+        secret_number=10
+        return 10
+    return func
+a=func_builder()
+print(a())
+print("*"*20)
+
+def func_decorator(fn):
+    print("decorating function")
+    def func():
+        print("hello function get decorated")
+        fn()
+        return "done"
+    return func
+fun=func_decorator(say_hello)
+print(fun())
+print("*"*20)
+# using decorator
+@func_decorator
+def hi_user():
+    print("hi user")
+print(hi_user())
+print("*"*20)
+
+@func_decorator
+def hi_user2():
+    say_hello()
+print(hi_user2())
+hi_user2()
+```
+### Function documentation 
+we don't have to tell function type of parametres or return values but it good practice and help others to understand how to use the function 
+#### Example
+```Python
+def add(a:int,b:int)->int :
+    return a+b
+
+print(add(5,4))
+```
