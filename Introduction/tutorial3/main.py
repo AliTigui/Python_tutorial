@@ -31,6 +31,13 @@ real_change(11)
 print(var)# now it changed
 print("_"*20)
 
+# function have argument with default value
+def hello_boss(boss_name="Ali"):
+    hello_name(boss_name)
+hello_boss()
+hello_boss("machmach")
+print("_"*20)
+
 # function take arbitrary number of parametre
 def hello_names(*names):
     for name in names:
@@ -40,13 +47,6 @@ l=["cat","tiger","raven","lion"]
 hello_names(*l)
 print("_"*20)
 
-# function have argument with default value
-def hello_boss(boss_name="Ali"):
-    hello_name(boss_name)
-hello_boss()
-hello_boss("machmach")
-print("_"*20)
-
 # function take arbitraty number of key value
 def user_data(**data):
     for k,v in data.items():
@@ -54,6 +54,16 @@ def user_data(**data):
 user_data(name="ali",grade="master",age=22)
 user={"name":"hmm","grade":"bs","age":20}
 user_data(**user)
+print("_"*20)
+
+# Recursive function 
+def power(n,base=2):
+    if base==0:
+        return 1
+    else :
+        return n*power(n,base-1)
+print(f"5 to power of 2 is {power(5)}")
+print(f"2 to power of 5 is {power(2,4)}")
 print("_"*20)
 
 # function take other function as parametre
@@ -66,16 +76,6 @@ print("_"*20)
 
 # lambdas
 do_something(lambda:print("this is lambda function"))
-print("_"*20)
-
-# Recursive function 
-def power(n,base=2):
-    if base==0:
-        return 1
-    else :
-        return n*power(n,base-1)
-print(f"5 to power of 2 is {power(5)}")
-print(f"2 to power of 5 is {power(2,4)}")
 print("_"*20)
 
 # Function that return function
