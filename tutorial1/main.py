@@ -2,6 +2,8 @@
 name = input("Enter your name : ")
 age = int(input("Enter your age : "))
 print(f"your name is {name} and you are {age} old")
+print("_"*20)
+print(" "*20)
 
 # Working with float and Integer
 a = 5
@@ -14,6 +16,8 @@ print(a**2)
 print(a//2)
 print(a%3)
 b,a=a,b
+print("_"*20)
+print(" "*20)
 
 # Working with Booleans
 b1=True
@@ -21,6 +25,8 @@ b2=False
 print(not b1)
 print(b1 and b2)
 print(b1 or b2)
+print("_"*20)
+print(" "*20)
 
 # Working with String
 username="Ali abdelghani"
@@ -35,6 +41,8 @@ print(username[0])
 print(full_name)
 print("#"*5)
 print("ali".center(10,"_"))
+print("_"*20)
+print(" "*20)
 
 # Working with List and Tuple
 mylist=[]
@@ -66,8 +74,29 @@ print(t[0])
 (a,*b)=lc
 print(a)
 print(b)
-# Set and Dictionary
-s=set()
-s.add(4)
-d={"name":"ali","age":20}
+print("_"*20)
+print(" "*20)
+
+# Set Dictionary
+empty_set=set()
+set1={4,5,7,9,10,11}
+set2={1,2,3,4,5}
+set1.add(6)
+set1.remove(10)
+print(f"union of {set1} and {set2} is {set1.union(set2)}")
+print(f"difference between of {set1} and {set2} is {set1.difference(set2)}")
+print(f"symmetric difference between of {set1} and {set2} is {set1.symmetric_difference(set2)}")
+print(f"intersection between of {set1} and {set2} is {set1.intersection(set2)}")
+print("_"*20)
+print(" "*20)
+
+# Dictionary
+dictionary={} 
+dictionary.setdefault("name","ali")
+dictionary["age"]=20
+print(dictionary)
+dictionary.update(name="anunnaki")
+print(dictionary.pop("age"))
+print(dictionary.items())
+print(dictionary.keys())
 
