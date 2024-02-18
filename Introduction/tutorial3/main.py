@@ -48,6 +48,10 @@ def do_something(func):
 do_something(say_hello)
 print("_"*20)
 
+# lambdas
+do_something(lambda:print("this is lambda function"))
+print("_"*20)
+
 # Recursive function 
 def power(n,base=2):
     if base==0:
@@ -56,3 +60,32 @@ def power(n,base=2):
         return n*power(n,base-1)
 print(f"5 to power of 2 is {power(5)}")
 print(f"2 to power of 5 is {power(2,4)}")
+print("_"*20)
+
+# Function that return function
+def func_builder():
+    print("building function")
+    def func():
+        secret_number=10
+        return 10
+    return func
+a=func_builder()
+print(a())
+print("*"*20)
+
+def func_decorator(fn):
+    print("decorating function")
+    def func():
+        print("hello function get decorated")
+        fn()
+        return "done"
+    return func
+fun=func_decorator(say_hello)
+print(fun())
+print("*"*20)
+
+@func_decorator
+def hi_user():
+    print("hi user")
+print(hi_user())
+
