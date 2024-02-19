@@ -22,9 +22,9 @@ matching pattern in regular expression :
 * `\W` not a word character
 * `A|B` either A or B
 * `(...)` a group
-* `(?:...)` non-capturing version
+* `(?:...)` non-capturing version  
 also in our regular expression we can have flags `re.IGNORECASE` `re.MULTILINE` `re.DOTALL`  
-others then we can use are `.match()` `.fullmatch()` `.sub()` `.split()` `.findall()`
+others then we can use are `.match()` `.fullmatch()` `.sub()` `.split()` `.findall()`  
 * re.match(pattern, string, flags=0) If zero or more characters at the beginning of string match the regular expression pattern, return a corresponding Match. Return None if the string does not match the pattern
 * re.fullmatch(pattern, string, flags=0) If the whole string matches the regular expression pattern, return a corresponding Match. Return None if the string does not match the pattern;
 * re.split(pattern, string, maxsplit=0, flags=0) Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list.
