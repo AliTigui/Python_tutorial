@@ -1,5 +1,5 @@
 ## Tutorial 6
-This tutorial will be library how to use regular expression in python 
+This tutorial will be about regular expression in python 
 ### Introduction to regular expression
 regular expression used to match patern when we want to check user name or password are verify the validation specification or no we use regular expression  
 to use regular expression first we need to import `re` module then we can use search to find pattern if it don't exist we will get fulsy value if it exist we will get truthy value  

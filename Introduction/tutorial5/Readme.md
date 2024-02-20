@@ -1,5 +1,5 @@
 ## Tutorial 5
-This tutorial will be library how to use others modules 
+This tutorial will be about library and how to use others modules 
 
 ### Built in modules
 built in modules are module that comme pre-installed with python we can use them with just using `import` kewyord
