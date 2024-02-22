@@ -31,4 +31,5 @@ mycat.talk()
 print(f"{mycat.get_name()} is {mycat.get_age()} year old")
 ```
 ### Inheriting in python and private attribute
-in python there is no way to creat private arrtibute but when we want do so we just create attribue and then in it's name we use `__` that will meane that we ant this attribute to be private , but python don't stop us if we want access to it 
+in python there is no way to creat private arrtibute but when we want do so we just create attribue and then in it's name we use `__` that will meane that we ant this attribute to be private , but python don't stop us if we want access to it  
+python also support Inheriting if we want inherite from class we just wite the father name inside the parentethis of the children, then we can overrite function orjust modify them by calling the function fro the parent class using `super()` 
