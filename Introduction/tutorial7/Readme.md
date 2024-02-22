@@ -101,3 +101,59 @@ robot2gen.walk()
 robot2gen.get_position()
 print(robot2gen)
 ```
+### Setter and Getter
+setter and getter are methods that we use to set and get attribute from the class  
+setter are useful cuz they help use to provide a condition when setting a value  
+getter can be used to get value of attribute in specific format
+#### Example
+```Python
+class Celsius:
+    def __init__(self, temperature=0):
+        self.temperature = temperature
+
+    def to_fahrenheit(self):
+        return (self.temperature * 1.8) + 32
+
+    @property
+    def temperature(self):
+        print("Getting value...")
+        return self._temperature
+
+    @temperature.setter
+    def temperature(self, value):
+        print("Setting value...")
+        if value < -273.15:
+            raise ValueError("Temperature below -273 is not possible")
+        self._temperature = value
+
+```
+# classmethod static method 
+A class method is one that is attached to the class itself rather than the class's object it takes a class parameter that points to the class and not the object instance, they have access to the class's state.It has the ability to change a class state that would impact every instance of the class it could change a class variable that would affect all instances  
+A static method is a method that is tied to the class instead of the class's object. It is not possible to pass an implicit first argument to a static method. The class state cannot be accessed or changed by this method. It is present in a class because having the method in a class makes sense.
+#### Example
+```Python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+ 
+    # a class method to create a Person object by birth year.
+    @classmethod
+    def fromBirthYear(cls, name, year):
+        return cls(name, date.today().year - year)
+ 
+    # a static method to check if a Person is adult or not.
+    @staticmethod
+    def isAdult(age):
+        return age > 18
+ 
+ 
+person1 = Person('mayank', 21)
+person2 = Person.fromBirthYear('mayank', 1996)
+ 
+print(person1.age)
+print(person2.age)
+ 
+# print the result
+print(Person.isAdult(22))
+```
