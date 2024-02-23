@@ -127,7 +127,7 @@ class Celsius:
         self._temperature = value
 
 ```
-# classmethod static method 
+### classmethod static method 
 A class method is one that is attached to the class itself rather than the class's object it takes a class parameter that points to the class and not the object instance, they have access to the class's state.It has the ability to change a class state that would impact every instance of the class it could change a class variable that would affect all instances  
 A static method is a method that is tied to the class instead of the class's object. It is not possible to pass an implicit first argument to a static method. The class state cannot be accessed or changed by this method. It is present in a class because having the method in a class makes sense.
 #### Example
